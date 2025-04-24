@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            background-color: #FF6600;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .cta-button:hover {
+            background-color: #CC5200;
+        }
+
+
+        .features-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .feature-column {
+            flex: 1;
+            min-width: 250px;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+            box-sizing: border-box;
+        }
+
+        .feature-column img {
+            width: 50px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+
+        .feature-column h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .feature-column p {
+            font-size: 1.1em;
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+
+        @media (max-width: 768px) {
+            .features-section {
+                flex-direction: column;
+            }
+            header h1{
+                font-size: 2em;
+            }
+            header p{
+                font-size: 1em;
+            }
+        }
+        @media (max-width: 480px){
+           .cta-button{
+             font-size: 1em;
+             padding: 10px 20px;
+           }
+           .feature-column{
+            min-width: 90%;
+           }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sammy Agro food</h1>
+        <p>At sammy agro food we deal with all kind of agriculture produce, crops, animal husbandary etc.</p>
+        <a href="#signup" class="cta-button">Sign Up Now</a>
+    </header>
+
+    <main>
+        <section class="features-section">
+            <div class="feature-column">
+                <img src="feature1-icon.png" alt="Feature 1">
+                <h3>Feature 1</h3>
+                <p>Description of Feature 1.  Explain the benefit.</p>
+            </div>
+            <div class="feature-column">
+                <img src="feature2-icon.png" alt="Feature 2">
+                <h3>Feature 2</h3>
+                <p>Description of Feature 2.  Explain the benefit.</p>
+            </div>
+            <div class="feature-column">
+                <img src="feature3-icon.png" alt="Feature 3">
+                <h3>Feature 3</h3>
+                <p>Description of Feature 3.  Explain the benefit.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sammy Agro Food | Contact: sagrofood@yahoo.com | Social Media: @asgrofood</p>
+    </footer>
+</body>
+</html>
